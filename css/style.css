@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0;
+}
+body>div {
+    min-width: 1200px;
+    font-family: "Roboto-Light","Roboto Light","Roboto";
+}
+
+body>div>div{
+    padding-left: 162px;
+}
+
+/*header*/
+header {
+    display: flex;
+}
+
+#nav-wrapper {
+    background: rgba(87, 94, 150, 1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-wrapper ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+#menu li {
+    margin-left: 30px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#account-menu li {
+    margin-left: 25px;
+}
+
+#account-menu a {
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+span.account-item {
+    display: block;
+    font-size: 14px;
+}
+
+ul#log {
+    padding-right: 40px;
+}
+
+#log li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/*Home*/
+
+section#home-wrapper {
+    min-width: 1000px;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+#home-wrapper>section {
+    display: flex;
+    justify-content: space-between;
+}
+#home-wrapper h1 {
+    margin: 0;
+    padding-top: 20px;
+    color: #83f783;
+    text-align: center;
+}
+
+#card-content {
+    display: flex;
+}
+#signature-card {
+    width: 175px;
+    height: 118px;
+    background: antiquewhite;
+    background: url('../images/signature-card.png');
+    background-size: contain;
+}
+
+#card-info ul {
+    margin: 0;
+    list-style: none;
+    padding-top: 20px;
+}
+
+#card-info ul li:nth-child(1){
+    font-size: 58px;
+    color: #535d98;
+}
+
+#card-info ul li:nth-child(2){
+    font-size: 21px;
+    color: #8f949a;
+}
+
+.alert-success {
+    background-color: #f1f9f7;
+    border-color: #e0f1e9;
+    color: #1d9d74;
+}
+
+#about-card {
+    color: #333333;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+i.fa.fa-info-circle {
+    cursor: pointer;
+}
+
+/*self-service*/
+div#self-service-content {
+    width: 288px;
+    margin-right: 30px;
+}
+
+#self-service-content>div {
+    border-radius: 20px;
+    border: 1px solid #999;
+}
+#self-service-header {
+    width: auto;
+    height: auto;
+    background: #999;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+#shortcuts{
+    list-style: none;
+}
+#shortcuts li a {
+    color: rgb(0, 204, 51);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+/*check-score-free*/
+div.check-score-free {
+    text-align: center;
+    border-color: #3c3 !important;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.check-score-free span {
+    display: block;
+    padding: 20px 0;
+    color: #3c3;
+}
+/*card-panel*/
+card-panel {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    right: 1.7%;
+}
+
+.card-panel {
+    background: rgba(242, 242, 242, 1);
+    width: 385px;
+    -webkit-box-shadow: 0px 1px 12px rgba(153, 153, 153, 1);
+    -moz-box-shadow: 0px 1px 12px rgba(153, 153, 153, 1);
+    box-shadow: 0px 1px 12px rgba(153, 153, 153, 1);
+    border-radius: 20px ;
+    margin: 0 5px;
+}
+
+#home-wrapper .card-panel .cp-header h1 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 100;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 3px;
+}
+.cp-header {
+    background: #999; /*to replace with a directive bg-color*/
+    box-shadow: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #ffffff;
+    padding: 20px;
+
+    }
+
+.cp-header span {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.cp-header button {
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    font-size: 18px;
+    color: #00CC66;
+    background: #fff;
+    top: -8px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+.cp-header button:hover {
+    background: rgba(242, 242, 242, 1);
+}
+
+.cp-body {
+    padding: 20px;
+    box-shadow: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #868686;
+
+}
+
+/*current-bal*/
+.current-bal {background: rgba(83, 93, 152, 1); }
+ul#card-outline {
+    padding-left: 0;
+    margin: 0;
+}
+ul#card-outline li {
+    list-style: none;
+}
+ul#card-outline li h1 {
+    text-align: left;
+    color: inherit;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+ul#card-outline li h3 {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 5px auto 15px;
+}
+ul#card-outline li:nth-child(3) {
+    display: flex;
+}
+
+ul#card-outline li:nth-child(3) h1 {
+    color: #83f783;
+}
+
+ul#card-outline li:nth-child(3) h3 {
+    line-height: 1.7;
+    margin: 0 20px 0;
+}
+
+ul#card-outline li:nth-child(3) i {
+    color: #83f783;
+}
+/*recent-trans*/
+.recent-trans {background: rgba(0, 153, 178, 1);}
+
+tr.recent-trans-total td {
+    border-top: 2px solid #e6e6e6;
+    text-align: right;
+}
+
+tr.recent-trans-payment {}
+
+#home-wrapper tr.recent-trans-payment td h1 {
+    color: #868686;
+    padding: 0;
+    font-size: 18px;
+}
+
+.recent-trans-payment h3 {
+    font-weight: 100;
+    font-size: 12px;
+    margin: auto 3px;
+}
+
+.recent-trans-payment td:nth-child(3) {
+    text-align: right;
+}
+
+/*recent-cash*/
+.recent-cash { background: rgba(51, 204, 51, 1);}
+ul#cashback-outline {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+#cashback-outline li span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#cashback-outline li h1 {
+    text-align: left;
+    color: #868686;
+    padding: 0;
+}
+
+#cashback-outline li h3 {
+    margin: 0 auto 20px;
+    font-weight: 100;
+}
+#cashback-outline button {
+    height: 50px;
+    width: 230px;
+    border-radius: 10px;
+    outline: none;
+}
+#cashback-outline li:nth-child(4) {
+    text-align: center;
+}
+
+#cashback-outline img {
+    width: 25px;
+}
+#cashback-outline li button span {
+    display: inline-block;
+    top: -6px;
+    color: #3c3;
+    font-weight: 600;
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+#cashback-outline button:active span {
+    color: #1b8a1b;
+}
+
+#cashback-outline li:nth-child(4) p {
+    margin: 3px 0;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+}

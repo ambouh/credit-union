@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>State Department Federal Credit Union</title>
+    <!--stylesheets-->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--libraries-->
+    <script src="js/libraries/jquery.js"></script>
+    <script src="js/libraries/angular.js"></script>
+    <script src="js/libraries/angular-resource.js"></script>
+    <script src="js/libraries/angular-ui-router.js"></script>
+    <script src="js/libraries/bootstrap.js"></script>
+
+    <!--app-->
+    <script src="js/app/app.js"></script>
+</head>
+<body ng-app="myApp">
+<div>
+    <header ng-controller="NavCtrl as vm">
+        <div>
+            <img ng-src="images/logo.gif" alt="{{vm.logo.alt}}"/>
+        </div>
+        <nav id="nav-wrapper">
+            <ul id="menu">
+                <li ng-repeat="item in vm.menu.menu">
+                    <a href="{{item.link}}">{{item.name}}</a>
+                </li>
+            </ul>
+            <ul id="account-menu">
+                <li ng-repeat="item in vm.menu.account">
+                    <a ui-sref="{{item.link}}">
+                        <i ng-class="item.icon" aria-hidden="true"></i>
+                        <span class="account-item">{{item.title}}</span>
+                    </a>
+                </li>
+            </ul>
+            <ul id="log">
+                <li><a href="#">{{vm.menu.log}}</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div ui-view></div>
+</div>
+</body>
+</html>
