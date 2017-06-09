@@ -159,9 +159,10 @@ div#self-service-content {
 /*check-score-free*/
 div.check-score-free {
     text-align: center;
-    border-color: #3c3 !important;
+    border: 1px solid #3c3;
     margin-top: 30px;
     cursor: pointer;
+    border-radius: 20px;
 }
 .check-score-free span {
     display: block;
