@@ -1505,7 +1505,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
    * - **path** `{string}` - returns the full path from the root down to this state. 
    *   Needed for state activation.
    * - **includes** `{object}` - returns an object that includes every state that 
-   *   would pass a '$state.includes()' test.
+   *   would pass a '$state.includes()' testing-dropdown.
    *
    * @example
    * <pre>
@@ -2168,7 +2168,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
      *
      * @param {string|object} stateName The state name or state object you'd like to check.
      * @param {object=} params A param object, e.g. `{sectionId: section.id}`, that you'd like 
-     * to test against the current active state.
+     * to testing-dropdown against the current active state.
      * @returns {boolean} Returns true if it is the state.
      */
     $state.is = function is(stateOrName, params) {
@@ -2193,7 +2193,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
      * @description
      * A method to determine if the current active state is equal to or is the child of the 
      * state stateName. If any params are passed then they will be tested for a match as well.
-     * Not all the parameters need to be passed, just the ones you'd like to test for equality.
+     * Not all the parameters need to be passed, just the ones you'd like to testing-dropdown for equality.
      *
      * @example
      * <pre>
@@ -2224,7 +2224,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
      *
      * @param {string} stateOrName A partial name to be searched for within the current state name.
      * @param {object} params A param object, e.g. `{sectionId: section.id}`, 
-     * that you'd like to test against the current active state.
+     * that you'd like to testing-dropdown against the current active state.
      * @returns {boolean} Returns true if it does include the state
      */
 

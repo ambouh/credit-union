@@ -47,7 +47,19 @@
                 restrict: 'AEC',
                 templateUrl: 'views/card-panel-views/components/recentCash.html'
             }
-        });
+        })
+        .directive('accountDetails', function() {
+        return {
+            restrict: 'AEC',
+            templateUrl: 'views/card-panel-views/components/recentCash.html'
+        }
+    })
+        .run(
+            accountDetails()
+        )
+        .run(
+            onClickAction()
+        );
 
     function HomeCtrl() {
         var vm = this;
@@ -86,7 +98,7 @@
         }
 
         vm.accountDetails = function () {
-            alert("HI!!!")
+            //document.getElementById("myDropdown").classList.toggle("show");
         }
     }
 
@@ -204,5 +216,25 @@
         }
 
 
+    }
+
+    function accountDetails(){
+        //document.getElementById("myDropdown").classList.toggle("show");
+        angular.element("myDropdown");
+    }
+    function onClickAction() {
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                console.log('you clicked something');
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     }
 }());
