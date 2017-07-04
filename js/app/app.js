@@ -47,7 +47,38 @@
                 restrict: 'AEC',
                 templateUrl: 'views/card-panel-views/components/recentCash.html'
             }
-        });
+        })
+        .directive('accountDetails', function() {
+            return {
+                restrict: 'AEC',
+                templateUrl: 'views/accountDetails.html'
+            }
+        })
+        .directive('accountIcon', function(){
+
+            function btnFunction(element) {
+                element.bind('click', function () {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                })
+            }
+
+            return{
+                restrict: 'AEC',
+                template: "<a id='account-icon'><i class='fa fa-info-circle fa-lg alert-success dropbtn'></i> </a>",
+                link: function(scope, element, attrs){
+                    btnFunction(element);
+                    onClickAction();
+                }
+            }
+        })
+        .directive('accountDetailsContent', function(){
+            return{
+                restrict: 'AEC',
+                templateUrl:'views/accountDetailsContent.html'
+            }
+        })
+
+    ;
 
     function HomeCtrl() {
         var vm = this;

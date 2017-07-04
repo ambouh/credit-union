@@ -20,6 +20,9 @@
 <body ng-app="myApp">
 <div>
     <header ng-controller="NavCtrl as vm">
+        <div>
+            <img ng-src="images/logo.gif" alt="{{vm.logo.alt}}"/>
+        </div>
         <nav id="nav-wrapper">
             <ul id="menu">
                 <li ng-repeat="item in vm.menu.menu">
