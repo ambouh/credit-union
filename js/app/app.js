@@ -49,23 +49,41 @@
             }
         })
         .directive('accountDetails', function() {
-        return {
-            restrict: 'AEC',
-            templateUrl: 'views/card-panel-views/components/recentCash.html'
-        }
-    })
-        .run(
-            accountDetails()
-        )
-        .run(
-            onClickAction()
-        );
+            return {
+                restrict: 'AEC',
+                templateUrl: 'views/accountDetails.html'
+            }
+        })
+        .directive('accountIcon', function(){
+
+            function btnFunction(element) {
+                element.bind('click', function () {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                })
+            }
+
+            return{
+                restrict: 'AEC',
+                template: "<a id='account-icon'><i class='fa fa-info-circle fa-lg alert-success dropbtn'></i> </a>",
+                link: function(scope, element, attrs){
+                    btnFunction(element);
+                    onClickAction();
+                }
+            }
+        })
+        .directive('accountDetailsContent', function(){
+            return{
+                restrict: 'AEC',
+                templateUrl:'views/accountDetailsContent.html'
+            }
+        })
 
     function HomeCtrl() {
         var vm = this;
         var person = {
             "firstName" :"John",
-            "lastName" : "Smith"
+            "lastName" : "Smith",
+            "percent" : "1.5%"
         };
         var personText = "Hello " + person.firstName + "!";
 
@@ -74,6 +92,7 @@
                 {"text" : personText},
                 {"text" : "Signature Visa Card"}
             ],
+            "person" : person,
             "selfService": {
                 "title" : "Self Service Shortcuts"
             },
@@ -93,13 +112,12 @@
                 {
                     "text": "Turn Off Account",
                     "link": "#"
-                },
-            ]
-        }
-
-        vm.accountDetails = function () {
-            //document.getElementById("myDropdown").classList.toggle("show");
-        }
+                }
+            ],
+            "accountDetails" : {
+                "acctNumber" : "1234",
+            }
+        };
     }
 
     function NavCtrl() {
@@ -205,7 +223,7 @@
                     "id": "recent-cash",
                     "title": "Recent Cash Balance",
                     "amount" : "72.42",
-                    "buttonTitle":"Redeem Now",
+                    "buttonTitle":"Redeem Now"
 
                 }
             ]
@@ -218,10 +236,6 @@
 
     }
 
-    function accountDetails(){
-        //document.getElementById("myDropdown").classList.toggle("show");
-        angular.element("myDropdown");
-    }
     function onClickAction() {
         window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
