@@ -78,13 +78,12 @@
             }
         })
 
-    ;
-
     function HomeCtrl() {
         var vm = this;
         var person = {
             "firstName" :"John",
-            "lastName" : "Smith"
+            "lastName" : "Smith",
+            "percent" : "1.5%"
         };
         var personText = "Hello " + person.firstName + "!";
 
@@ -93,6 +92,7 @@
                 {"text" : personText},
                 {"text" : "Signature Visa Card"}
             ],
+            "person" : person,
             "selfService": {
                 "title" : "Self Service Shortcuts"
             },
@@ -112,13 +112,12 @@
                 {
                     "text": "Turn Off Account",
                     "link": "#"
-                },
-            ]
-        }
-
-        vm.accountDetails = function () {
-            alert("HI!!!")
-        }
+                }
+            ],
+            "accountDetails" : {
+                "acctNumber" : "1234",
+            }
+        };
     }
 
     function NavCtrl() {
@@ -224,7 +223,7 @@
                     "id": "recent-cash",
                     "title": "Recent Cash Balance",
                     "amount" : "72.42",
-                    "buttonTitle":"Redeem Now",
+                    "buttonTitle":"Redeem Now"
 
                 }
             ]
@@ -235,5 +234,21 @@
         }
 
 
+    }
+
+    function onClickAction() {
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                console.log('you clicked something');
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     }
 }());

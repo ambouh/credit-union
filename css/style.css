@@ -101,12 +101,12 @@ section#home-wrapper {
     padding-top: 20px;
 }
 
-#card-info ul li:nth-child(1){
+#card-info>ul>li:nth-child(1){
     font-size: 58px;
     color: #535d98;
 }
 
-#card-info ul li:nth-child(2){
+#card-info>ul>li:nth-child(2){
     font-size: 21px;
     color: #8f949a;
 }
@@ -356,3 +356,98 @@ ul#cashback-outline {
     text-align: center;
     width: 200px;
 }
+
+
+/*----Account Details-------*/
+
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+div#acctContentHeader {
+    padding: 20px;
+    background: #535d98;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    font-size: 19px;
+}
+#acctContentHeader span:nth-child(1){
+    font-weight: bold;
+
+}
+
+#acctContentHeader span:nth-child(2) {
+    font-style: italic;
+}
+ul#accountSpecs {
+    padding: 0;
+    margin: 0;
+}
+ul#accountSpecs li {
+    font-size: 18px;
+    color: #8f949a;
+}
+
+div#acctContentBody {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+
+#acctContentBody p {
+    margin: 0;
+}
+
+#accountSpan span {
+    display: block;
+    font-size: 15px;
+}
+
+#accountSpan span:nth-child(1) {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    color: #575E96;
+}
+
+#accountSpan span:nth-child(2) {
+    font-weight: 200;
+    font-style: italic;
+    color: #5E5E5E;
+}
+
+#accountSpan span:nth-child(3) {
+    font-weight: 200;
+    font-style: normal;
+    color: #666666;
+    margin: 10px 0;
+}
+
+
