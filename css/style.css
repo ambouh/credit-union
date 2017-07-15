@@ -134,15 +134,12 @@ div#self-service-content {
 }
 
 #self-service-content>div {
-    border-radius: 20px;
     border: 1px solid #999;
 }
 #self-service-header {
     width: auto;
     height: auto;
     background: #999;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     padding: 20px;
     text-align: center;
     color: #fff;
@@ -162,7 +159,7 @@ div.check-score-free {
     border: 1px solid #3c3;
     margin-top: 30px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .check-score-free span {
     display: block;
@@ -184,7 +181,6 @@ card-panel {
     -webkit-box-shadow: 0px 1px 12px rgba(153, 153, 153, 1);
     -moz-box-shadow: 0px 1px 12px rgba(153, 153, 153, 1);
     box-shadow: 0px 1px 12px rgba(153, 153, 153, 1);
-    border-radius: 20px ;
     margin: 0 5px;
 }
 
@@ -199,8 +195,6 @@ card-panel {
 .cp-header {
     background: #999; /*to replace with a directive bg-color*/
     box-shadow: none;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     color: #ffffff;
     padding: 20px;
 
@@ -383,8 +377,6 @@ ul#cashback-outline {
     min-width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -393,8 +385,6 @@ ul#cashback-outline {
 div#acctContentHeader {
     padding: 20px;
     background: #535d98;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     color: #fff;
     font-size: 19px;
 }
@@ -416,8 +406,6 @@ ul#accountSpecs li {
 }
 
 div#acctContentBody {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     padding: 20px;
 }
 
