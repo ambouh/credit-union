@@ -18,6 +18,18 @@
                             templateUrl: 'views/home.html',
                             controller: 'HomeCtrl as vm'
                         })
+                        .state('statements', {
+                            url:'/statements',
+                            templateUrl: 'views/statements.html',
+                        })
+                        .state('yearEndSummary', {
+                            url:'/yearEndSummary',
+                            templateUrl: 'views/yearEndSummary.html'
+                        })
+                        .state('findASpecific', {
+                            url:'/findASpecific',
+                            templateUrl: 'views/findASpecific.html',
+                        })
                 }
             ]
         )

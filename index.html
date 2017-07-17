@@ -6,6 +6,7 @@
     <!--stylesheets-->
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/statements.css" rel="stylesheet">
 
     <!--libraries-->
     <script src="js/libraries/jquery.js"></script>
@@ -23,9 +24,6 @@
         <div>
             <img ng-src="images/logo.gif" alt="{{vm.logo.alt}}"/>
         </div>
-        <style>
-
-        </style>
         <nav id="nav-wrapper">
             <ul id="menu">
                 <li class="dropdown-menu">
@@ -35,13 +33,13 @@
                             <span>Your Card Activity</span>
                         </li>
                         <li>
-                            <a >Statements</a>
+                            <a ui-sref="statements">Statements</a>
                         </li>
                         <li>
-                            <a >Year End Summary</a>
+                            <a  ui-sref="yearEndSummary">Year End Summary</a>
                         </li>
                         <li>
-                            <a>Find A Specific Transaction</a>
+                            <a ui-sref="findASpecific">Find A Specific Transaction</a>
                         </li>
                     </ul>
                 </li>

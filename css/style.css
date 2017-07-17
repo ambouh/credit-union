@@ -39,50 +39,6 @@ header {
     color: #fff;
     text-decoration: none;
 }
-#menu li.dropdown-menu {
-    position: relative;
-    display: inline-block;
-}
-#menu a.dropdbtn-menu{
-    padding: 36px 15px;
-}
-#menu .dropdown-content-menu span {
-    display: block;
-    padding: 6px 0 3px;
-    color: #575e96;
-}
-#menu li.dropdown-menu:hover ul.dropdown-content-menu {
-    display: block;
-}
-#menu ul.dropdown-content-menu {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    background: #fff;
-    padding-left: 0;
-    padding-right: 15px;
-    top: 54px;
-}
-#menu ul.dropdown-content-menu li.title {
-    margin-left: 10px;
-}
-#menu ul.dropdown-content-menu li {
-    margin-left: 20px;
-}
-#menu ul.dropdown-content-menu li a {
-    color: rgb(153, 153, 153);
-    text-decoration: none;
-    display: block;
-    padding: 3px 0;
-}
-ul.dropdown-content-menu a:hover {
-}
-#menu a.dropdbtn-menu:hover{
-    /*color: #454b77;*/
-
-}
 
 #account-menu li {
     margin-left: 25px;
@@ -483,3 +439,49 @@ div#acctContentBody {
 }
 
 
+
+/*drop down menu*/
+#menu li.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+#menu a.dropdbtn-menu{
+    padding: 36px 15px;
+}
+#menu .dropdown-content-menu span {
+    display: block;
+    padding: 6px 0 3px;
+    color: #575e96;
+}
+#menu li.dropdown-menu:hover ul.dropdown-content-menu {
+    display: block;
+}
+#menu ul.dropdown-content-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background: #fff;
+    padding-left: 0;
+    padding-right: 15px;
+    top: 54px;
+}
+#menu ul.dropdown-content-menu li.title {
+    margin-left: 10px;
+}
+#menu ul.dropdown-content-menu li {
+    margin-left: 20px;
+}
+#menu ul.dropdown-content-menu li a {
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+    display: block;
+    padding: 3px 0;
+}
+ul.dropdown-content-menu a:hover {
+}
+#menu a.dropdbtn-menu:hover{
+    /*color: #454b77;*/
+
+}
