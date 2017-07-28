@@ -10,7 +10,7 @@ section#statements-wrapper {
     min-width: 869px;
 }
 
-div#card-info {
+div.card-info {
     max-width: 600px;
     margin-left: 15px;
 }
@@ -26,6 +26,8 @@ div#card-info {
     font-size: 36px;
     font-weight: 100;
     margin: 0px 0 20px;
+    position: relative;
+    left: -50px;
 }
 
 div#paymentInterface {

@@ -17,6 +17,10 @@ header {
     display: flex;
 }
 
+.logo-box {
+    cursor: pointer;
+}
+
 #nav-wrapper {
     background: rgba(87, 94, 150, 1);
     width: 100%;

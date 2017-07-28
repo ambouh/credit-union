@@ -22,13 +22,29 @@
                             url:'/statements',
                             templateUrl: 'views/statements.html',
                         })
+                        .state('turnCardOff', {
+                            url:'/turnCardOff',
+                            templateUrl: 'views/TurnCardOff.html'
+                        })
                         .state('yearEndSummary', {
                             url:'/yearEndSummary',
-                            templateUrl: 'views/yearEndSummary.html'
+                            templateUrl: 'views/yearEndSummary.html',
                         })
-                        .state('findASpecific', {
-                            url:'/findASpecific',
-                            templateUrl: 'views/findASpecific.html',
+                        .state('getANewCard', {
+                            url:'/getANewCard',
+                            templateUrl: 'views/getANewCard.html'
+                        })
+                        .state('redeemToCard', {
+                            url:'/redeemToCard',
+                            templateUrl: 'views/redeemToCard.html'
+                        })
+                        .state('redeemConfirm', {
+                            url:'/redeemConfirm',
+                            templateUrl: 'views/redeemConfirm.html'
+                        })
+                        .state('redeemYourReward', {
+                            url:'/redeemYourReward',
+                            templateUrl: 'views/redeemYourReward.html'
                         })
                 }
             ]

@@ -7,6 +7,10 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/statements.css" rel="stylesheet">
+    <link href="css/TurnCardOff.css" rel="stylesheet">
+    <link href="css/yearEndSummary.css" rel="stylesheet">
+    <link href="css/getANewCard.css" rel="stylesheet">
+    <link href="css/redeemToCard.css" rel="stylesheet">
 
     <!--libraries-->
     <script src="js/libraries/jquery.js"></script>
@@ -21,7 +25,7 @@
 <body ng-app="myApp">
 <div>
     <header ng-controller="NavCtrl as vm">
-        <div>
+        <div class="logo-box" ui-sref="home">
             <img ng-src="images/logo.gif" alt="{{vm.logo.alt}}"/>
         </div>
         <nav id="nav-wrapper">
@@ -70,7 +74,7 @@
                             <a >Understand Your CashBack Rewards</a>
                         </li>
                         <li>
-                            <a style="color: forestgreen">Redeem Your CashBack Rewards</a>
+                            <a style="color: forestgreen" ui-sref="redeemYourReward">Redeem Your CashBack Rewards</a>
                         </li>
                     </ul>
                 </li>
@@ -83,6 +87,9 @@
                         <li>
                             <a >Report Stolen Card</a>
                         </li>
+                        <li>
+                            <a ui-sref="turnCardOff">Turn Card Off</a>
+                        </li>
                         <li class="title">
                             <span>Notifications and Alerts</span>
                         </li>
@@ -94,6 +101,7 @@
                         </li>
                         <li>
                             <a >Activate New Card</a>
+                            <a ui-sref="getANewCard">Get A New Card</a>
                         </li>
                     </ul>
                 </li>
